@@ -22,3 +22,5 @@ In this document, I have summarized all the essential Git and GitHub concepts th
 - `git commit -m "your message"` — Save changes to the local repository with a descriptive message.
 - `git rm <file-name>` — Remove a file from both the working directory and staging area.
 - `git restore <file-name>` — Restore a file to its last committed state (undo changes in the working directory).
+
+
