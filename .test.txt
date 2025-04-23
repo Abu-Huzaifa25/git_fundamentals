@@ -1,0 +1,13 @@
+#!/bin/sh
+# .git/hooks/pre-commit
+
+# Example pre-commit hook to check for TODO comments in code
+if git diff --cached | grep -i 'TODO'; then
+    echo "ERROR: Commit contains TODO comments. Please resolve them before committing."
+    exit 1
+fi
+
+# Allow the commit if no TODO comments are found
+exit 0
+
+
